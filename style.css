@@ -42,3 +42,11 @@ body {
     position: relative;
     left: 63px;
 }
+
+.header h2 {
+    font-size: 30px;
+    color: #01940b;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
