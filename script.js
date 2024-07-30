@@ -54,4 +54,32 @@ for (let i = 0; i < priceInputvalue.length; i++) {
             }
         }
     });
+
+    // Add event listeners to range input elements
+    for (let i = 0; i < rangeInputValue.length; i++) {
+        rangeInputValue[i].addEventListener("input", e => {
+            let minVal = parseInt(rangeInputValue[0].value);
+            let maxVal = parseInt(rangeInputValue[1].value);
+
+            let diff = maxVal - minVal;
+
+            // Check if the price gap is exceeded
+            if (diff < priceGap) {
+                // Check if the input is the min range input
+                if (e.target.className === "min-range") {
+                    rangeInputValue[0].value = maxVal - priceGap;
+                }
+                else {
+                    rangeInputValue[1].value = minVal + priceGap;
+                }
+            }
+            else {
+                // Update price inputs and range progress
+                priceInputvalue[0].value = minVal;
+                priceInputvalue[1].value = maxVal;
+                rangeValue.style.left = `${(minVal / rangeInputValue[0].max) * 100}%`;
+                rangeValue.style.right = `${100 - (maxVal / rangeInputValue[1].max) * 100}%`
+            }
+        });
+    }
 }
