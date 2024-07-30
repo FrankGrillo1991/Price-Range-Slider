@@ -55,3 +55,14 @@ body {
 .price-input-container {
     width: 100%;
 }
+
+.price-input .price-field {
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.price-field span {
+    margin-right: 10px;
+    margin-top: 6px;
+    font-size: 17px;
+}
