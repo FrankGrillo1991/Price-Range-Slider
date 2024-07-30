@@ -34,3 +34,11 @@ body {
     font-weight: 600;
     color: #01940b;
 }
+
+.custom-wrapper {
+    margin: 0;
+    width: 70%;
+    padding: 0px 25px 40px;
+    position: relative;
+    left: 63px;
+}
