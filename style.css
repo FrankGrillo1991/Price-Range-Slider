@@ -50,3 +50,8 @@ body {
     justify-content: center;
     padding: 20px;
 }
+
+/* Styles for the price input container */
+.price-input-container {
+    width: 100%;
+}
