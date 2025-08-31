@@ -1,13 +1,5 @@
 /* Style.css */
 
-label {
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-    margin-bottom: 6px;
-    display: inline-block;
-    letter-spacing: 0.5px;
-}
 * {
     margin: 0;
     padding: 0;
@@ -58,6 +50,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
+    text-align: center;
 }
 
 /* Styles for the price input container */
@@ -70,10 +63,13 @@ body {
     margin-bottom: 22px;
 }
 
-.price-field span {
-    margin-right: 10px;
-    margin-top: 6px;
+.price-field label {
+    flex: 1;
     font-size: 17px;
+    color: #555;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    align-self: center;
 }
 
 .price-field input {
