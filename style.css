@@ -44,12 +44,15 @@ body {
     left: 63px;
 }
 
-.header h2 {
-    font-size: 30px;
-    color: #01940b;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.projtitle {
+    font-size: 27px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    position: relative;
+    right: 26px;
+    width: 80%;
+    font-family: "DM Sans", sans-serif;
     text-align: center;
 }
 
