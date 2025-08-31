@@ -25,13 +25,13 @@
             <div class="price-input-container">
                 <div class="price-input">
                     <div class="price-field">
-                        <label>Minimum Price</label>
-                        <input type="number" title="Minimum Price" class="min-input" value="2500">
+                        <label for="min-price">Minimum Price</label>
+                        <input id="min-price" type="number" title="Minimum Price" class="min-input" value="2500" aria-label="Minimum Price" autocomplete="off">
                     </div>
 
                     <div class="price-field">
-                        <label>Maximum Price</label>
-                        <input type="number" title="Maximum Price" class="max-input" value="8500">
+                        <label for="max-price">Maximum Price</label>
+                        <input id="max-price" type="number" title="Maximum Price" class="max-input" value="8500" aria-label="Maximum Price" autocomplete="off">
                     </div>
                 </div>
                 <div class="slider-container">
@@ -41,19 +41,23 @@
                 </div>
             </div>
 
-            <div class="range-input">
+            <div class="range-input" role="group" aria-label="Price Range Slider">
                 <input type="range"
+                id="min-range"
                 class="min-range"
                 min="0"
                 max="10000"
                 value="2500"
-                step="1">
+                step="1"
+                aria-label="Minimum Price Range">
                 <input type="range"
+                id="max-range"
                 class="max-range"
                 min="0"
                 max="10000"
                 value="8500"
-                step="1">
+                step="1"
+                aria-label="Maximum Price Range">
             </div>
         </div>
         <script src="script.js"></script>
